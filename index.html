@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="cent">
+        <h1>Logo</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobre" class="cent">
+        <h2>Sobre</h2>
+        <div class="portfolio">
+            <div class="portfolio-image">
+                <img class="profile-img" src="imagens/profile.png" alt="">
+                <h3 class="nome">Nome da Pessoa</h3>
+            </div>
+            <div class="portfolio-text">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem maiores consequatur dolores eveniet totam esse reiciendis officia perferendis? Obcaecati architecto itaque quasi sunt ex dolore quod officia dicta deleniti ipsum.</p>
+            </div>
+        </div>        
+    </section>
+
+    <section id="projetos" class="cent">
+        <h2>Meus Projetos</h2>
+        <div class="projeto">
+            <div class="containImgPro">
+                <img class="imgPro" src="imagens/imagem_projeto.jpg" alt="">
+            </div>
+            <div class="containTextPro">
+                <h3>Projeto </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero officia doloribus ullam officiis laboriosam rem numquam placeat est quasi deleniti magnam mollitia, dolor perspiciatis. Animi dolores repudiandae possimus repellat laboriosam!</p>
+            </div>
+        </div>
+        <div class="projeto">
+            <div class="containImgPro">
+                <img class="imgPro" src="imagens/imagem_projeto.jpg" alt="">
+            </div>
+            <div class="containTextPro">
+                <h3>Projeto </h3>
+                <p>Descrição breve do projeto . Aqui você pode incluir uma imagem ou link para o projeto.</p>
+            </div>
+        </div>
+        <div class="projeto">
+            <div class="containImgPro">
+                <img class="imgPro" src="imagens/imagem_projeto.jpg" alt="">
+            </div>
+            <div class="containTextPro">
+                <h3>Projeto </h3>
+                <p>Descrição breve do projeto . Aqui você pode incluir uma imagem ou link para o projeto.</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="contato" class="cent">
+        <h2>Entre em contato</h2>
+        <div class="containForm">
+            <form id="contactForm" action="loading.html" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="text">Semestre:</label>
+                <input type="number" id="semestre" name="semestre" required>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Meu Nome</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

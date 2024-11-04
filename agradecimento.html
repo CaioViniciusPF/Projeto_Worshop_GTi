@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado!</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .thank-you-container {
+            text-align: center;
+        }
+
+        h1 {
+            color: #3498db;
+        }
+
+        p {
+            color: #333;
+            font-size: 1.2rem;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            transform: translateY(1px);
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-container">
+        <h1>Obrigado, <span id="userName"></span>!</h1>
+        <p>Agradecemos sua participação no workshop do semestre <span id="userSemester"></span>!</p>
+    </div>
+    <button onclick="voltarParaPaginaPrincipal()">Voltar para a Página Principal</button>
+    <script>
+        const nome = localStorage.getItem('nome');
+        const semestre = localStorage.getItem('semestre');
+
+        document.getElementById('userName').textContent = nome;
+        document.getElementById('userSemester').textContent = semestre;
+
+        localStorage.removeItem('nome');
+        localStorage.removeItem('semestre');
+
+        function voltarParaPaginaPrincipal() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
